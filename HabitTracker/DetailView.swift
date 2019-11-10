@@ -8,22 +8,36 @@
 
 import SwiftUI
 
+// TODO: add "increase count" button
+
 struct DetailView: View {
-    let description: String
-    let count: Int
+    
+    @ObservedObject var activities: Activities
+    @State private var count = 0
+    let detailItemID: Int
+    private var detailItem: ActivityItem
+    
+    init(activities: Activities, detailItemID: Int) {
+        self.activities = activities
+        self.detailItemID = detailItemID
+        
+        self.detailItem = activities.items[detailItemID]
+    }
     
     var body: some View {
         VStack {
-            Text(description)
-            Text("Count: \(count)")
+            Text(detailItem.description)
+            Text("Count: \(detailItem.count)")
+            Text("Id: \(detailItem.id)")
+            Button("Add one to count") {
+                self.activities.items[self.detailItemID].count += 1
+            }
         }
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
-    static let testActivity = Activity(id: 1, title: "Some title", description: "some description", count: 2)
     static var previews: some View {
-        
-        DetailView(description: testActivity.description, count: testActivity.count)
+        DetailView(activities: Activities(), detailItemID: 0)
     }
 }

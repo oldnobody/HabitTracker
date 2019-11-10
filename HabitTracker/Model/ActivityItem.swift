@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct Activity: Identifiable {
+struct ActivityItem: Codable, Identifiable {
     let id: Int
     var title: String
     var description: String
-    var count: Int
+    var count: Int = 0
 }

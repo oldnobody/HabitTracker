@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1744A0602377DE9B00F3382E /* ActivityItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1744A05F2377DE9B00F3382E /* ActivityItem.swift */; };
 		1768075F2377A86600B8995C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1768075E2377A86600B8995C /* DetailView.swift */; };
 		176807612377AAD800B8995C /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176807602377AAD800B8995C /* AddView.swift */; };
 		178112A52376C78000665ED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178112A42376C78000665ED2 /* AppDelegate.swift */; };
@@ -15,11 +16,11 @@
 		178112AB2376C78100665ED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 178112AA2376C78100665ED2 /* Assets.xcassets */; };
 		178112AE2376C78100665ED2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 178112AD2376C78100665ED2 /* Preview Assets.xcassets */; };
 		178112B12376C78100665ED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178112AF2376C78100665ED2 /* LaunchScreen.storyboard */; };
-		178112B92376C7C400665ED2 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178112B82376C7C400665ED2 /* Activity.swift */; };
 		178112BB2376DD6D00665ED2 /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178112BA2376DD6D00665ED2 /* Activities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1744A05F2377DE9B00F3382E /* ActivityItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityItem.swift; sourceTree = "<group>"; };
 		1768075E2377A86600B8995C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		176807602377AAD800B8995C /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		178112A12376C78000665ED2 /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,7 +31,6 @@
 		178112AD2376C78100665ED2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		178112B02376C78100665ED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		178112B22376C78100665ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		178112B82376C7C400665ED2 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		178112BA2376DD6D00665ED2 /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,7 +89,7 @@
 		178112BC2376E45E00665ED2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				178112B82376C7C400665ED2 /* Activity.swift */,
+				1744A05F2377DE9B00F3382E /* ActivityItem.swift */,
 				178112BA2376DD6D00665ED2 /* Activities.swift */,
 			);
 			path = Model;
@@ -167,10 +167,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				176807612377AAD800B8995C /* AddView.swift in Sources */,
+				1744A0602377DE9B00F3382E /* ActivityItem.swift in Sources */,
 				178112A52376C78000665ED2 /* AppDelegate.swift in Sources */,
 				1768075F2377A86600B8995C /* DetailView.swift in Sources */,
 				178112A72376C78000665ED2 /* SceneDelegate.swift in Sources */,
-				178112B92376C7C400665ED2 /* Activity.swift in Sources */,
 				178112BB2376DD6D00665ED2 /* Activities.swift in Sources */,
 				178112A92376C78000665ED2 /* ContentView.swift in Sources */,
 			);

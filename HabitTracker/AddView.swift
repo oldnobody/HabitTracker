@@ -22,8 +22,8 @@ struct AddView: View {
                 }
                 Section {
                     Button("Add") {
-                        let id = self.activities.count + 1
-                        let activity = Activity(id: id, title: self.title, description: self.description, count: 0)
+                        let id = self.activities.count 
+                        let activity = ActivityItem(id: id, title: self.title, description: self.description)
                         self.activities.add(activity)
                         self.presentationMode.wrappedValue.dismiss()
                         }
@@ -33,7 +33,6 @@ struct AddView: View {
 }
 
 struct AddView_Previews: PreviewProvider {
-    
     static var previews: some View {
         AddView(activities: Activities())
     }
